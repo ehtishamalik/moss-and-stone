@@ -1,3 +1,9 @@
+import FeatureBannerCard from "@/components/blocks/FeatureBannerCard";
+
 export default function Home() {
-  return <h1>Welcome to Moss and Stone</h1>;
+  return (
+    <>
+      <FeatureBannerCard />
+    </>
+  );
 }

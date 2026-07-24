@@ -1,0 +1,68 @@
+@use "includes" as *;
+
+@mixin type($size-min, $size-max, $weight, $spacing) {
+  font-size: responsive-values($size-min, $size-max);
+  line-height: 1.1em;
+  letter-spacing: $spacing;
+  font-weight: $weight;
+}
+
+h1,
+.is-typography--t1 {
+  @include type(30, 40, 400, normal);
+  font-family: var(--font-heading);
+}
+
+// h2,
+// .is-typography--t2 {
+//   @include type(36, 56, 600, -2px);
+// }
+
+// h3,
+// .is-typography--t3 {
+//   @include type(30, 40, 600, -0.8px);
+// }
+
+// h4,
+// .is-typography--t4 {
+//   @include type(20, 24, 600, -0.5px);
+// }
+
+// h5,
+// .is-typography--t5 {
+//   @include type(14, 16, 600, normal);
+// }
+
+// h6,
+// .is-typography--t6 {
+//   font-size: rem(14);
+//   line-height: 1.2em;
+//   letter-spacing: normal;
+//   font-weight: 700;
+// }
+
+// .is-typography--stat {
+//   @include type(40, 82, 600, -1.5px);
+// }
+
+// p,
+// .is-typography--body {
+//   font-size: rem(16);
+//   line-height: 1.2em;
+//   letter-spacing: normal;
+//   font-weight: 400;
+// }
+
+// .is-typography--link {
+//   font-size: rem(16);
+//   line-height: 1.2em;
+//   letter-spacing: normal;
+//   font-weight: 500;
+// }
+
+// .is-typography--btn {
+//   font-size: rem(14);
+//   line-height: 1.2em;
+//   letter-spacing: normal;
+//   font-weight: 600;
+// }
