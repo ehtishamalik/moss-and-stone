@@ -7,7 +7,7 @@ export default function CategoryGrid() {
       <div className="px-container">
         <div>
           <h2 className="mb-2.5">SHOP BY CATEGORY</h2>
-          <p className="mb-10">
+          <p className="mb-10 max-w-md">
             Explore our curated collections of earth-toned essentials made for
             daily living.
           </p>

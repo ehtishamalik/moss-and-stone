@@ -1,4 +1,9 @@
-import type { CategoryCard, ProductCard, TestimonialCard } from "@/types";
+import type {
+  BenefitsCard,
+  CategoryCard,
+  ProductCard,
+  TestimonialCard,
+} from "@/types";
 
 export const CATEGORY_GRID: CategoryCard[] = [
   {
@@ -78,6 +83,27 @@ export const TESTIMONIALS: TestimonialCard[] = [
       "The customer service is fantastic, and the products are even better. I'm a loyal fan now!",
     name: "Emily Johnson",
     image: "/images/testimonials/emily-johnson.jpg",
+  },
+];
+
+export const BENEFITS: BenefitsCard[] = [
+  {
+    title: "0g Plastic in our packaging",
+    descriptionStrong: "The Zero-Waste Equation.",
+    description:
+      "We’ve subtracted plastic entirely, delivering your garments in 100% biodegradable materials for an unboxing as clean as our conscience.",
+  },
+  {
+    title: "100% GOTS Certified Cotton",
+    descriptionStrong: "The Pure Provenance.",
+    description:
+      "Sourced without compromise, our GOTS-certified fibers ensure a breathable luxury that respects both your skin and the health of the soil.",
+  },
+  {
+    title: "1 Year warranty on seams",
+    descriptionStrong: "The Promise of Longevity.",
+    description:
+      " True luxury is durability. We back the structural integrity of every seam for a full year, ensuring your investment stands the test of time.",
   },
 ];
 

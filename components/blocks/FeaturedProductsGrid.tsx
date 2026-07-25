@@ -7,7 +7,7 @@ export default function FeaturedProductsGrid() {
       <div className="px-container">
         <div>
           <h2 className="mb-2.5">BESTSELLERS</h2>
-          <p className="mb-10">
+          <p className="mb-10 max-w-md">
             Shop the crowd favorites. These are the most-loved styles our
             community adores.
           </p>

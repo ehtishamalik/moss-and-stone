@@ -10,7 +10,7 @@ export default function TestimonialsSlider() {
     <section className="section-padding">
       <div className="px-container">
         <h2 className="mb-2.5">PROVEN QUALITY</h2>
-        <p className="mb-10">
+        <p className="mb-10 max-w-md">
           Hear from our community. Real experiences with the craftsmanship and
           quality of our everyday essentials
         </p>

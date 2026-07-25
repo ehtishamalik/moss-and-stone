@@ -17,3 +17,9 @@ export type TestimonialCard = {
   name: string;
   image: string;
 };
+
+export type BenefitsCard = {
+  title: string;
+  descriptionStrong: string;
+  description: string;
+};
