@@ -3,7 +3,7 @@ import CategoryCard from "../cards/CategoryCard";
 
 export default function CategoryGrid() {
   return (
-    <section className="section-padding">
+    <section>
       <div className="px-container">
         <div>
           <h2 className="mb-2.5">SHOP BY CATEGORY</h2>

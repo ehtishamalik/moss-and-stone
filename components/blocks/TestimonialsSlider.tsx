@@ -7,7 +7,7 @@ import "swiper/css";
 
 export default function TestimonialsSlider() {
   return (
-    <section className="section-padding">
+    <section>
       <div className="px-container">
         <h2 className="mb-2.5">PROVEN QUALITY</h2>
         <p className="mb-10 max-w-md">

@@ -3,7 +3,7 @@ import BenefitsCard from "../cards/BenefitsCard";
 
 export default function BenefitsRow() {
   return (
-    <section className="section-padding">
+    <section>
       <div className="px-container">
         <h2 className="mb-2.5">CONSCIOUS CALCULATIONS</h2>
         <p className="mb-10 max-w-md">

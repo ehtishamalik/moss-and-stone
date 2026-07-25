@@ -49,8 +49,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={cn("antialiased", satoshi.variable)}>
-      <body className="min-h-full flex flex-col">
-        <main className="flex-1">{children}</main>
+      <body className="min-h-screen flex flex-col">
+        <main className="flex-1 flex flex-col section-gap">{children}</main>
         <Footer />
       </body>
     </html>

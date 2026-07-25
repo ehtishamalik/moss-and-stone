@@ -3,7 +3,7 @@ import ProductCard from "../cards/ProductCard";
 
 export default function FeaturedProductsGrid() {
   return (
-    <section className="section-padding">
+    <section>
       <div className="px-container">
         <div>
           <h2 className="mb-2.5">BESTSELLERS</h2>

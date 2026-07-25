@@ -2,6 +2,7 @@ import BenefitsRow from "@/components/blocks/BenefitsRow";
 import CategoryGrid from "@/components/blocks/CategoryGrid";
 import FeatureBannerCard from "@/components/blocks/FeatureBannerCard";
 import FeaturedProductsGrid from "@/components/blocks/FeaturedProductsGrid";
+import NewsletterCTA from "@/components/blocks/NewsletterCTA";
 import TestimonialsSlider from "@/components/blocks/TestimonialsSlider";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <FeaturedProductsGrid />
       <TestimonialsSlider />
       <BenefitsRow />
+      <NewsletterCTA />
     </>
   );
 }

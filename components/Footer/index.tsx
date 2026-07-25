@@ -2,8 +2,8 @@ import { FOOTER } from "@/constants";
 
 export default function Footer() {
   return (
-    <footer className="section-padding pb-4!">
-      <div className="px-container-lite">
+    <footer className="pb-4">
+      <div className="px-container">
         <div className="p-5 flex gap-2.5 bg-primary text-primary-foreground">
           <div className="flex-1 p-5 flex gap-5">
             {FOOTER.map((item, index) => (

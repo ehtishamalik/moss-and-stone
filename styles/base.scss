@@ -21,8 +21,9 @@
   margin: 0 auto;
 }
 
-.section-padding {
-  padding: responsive-values(30, 40) 0;
+.section-gap {
+  gap: responsive-values(60, 80) 0;
+  padding-bottom: responsive-values(60, 80);
 }
 
 .payload-richtext {
