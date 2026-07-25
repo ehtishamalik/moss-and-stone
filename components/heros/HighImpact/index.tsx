@@ -17,7 +17,7 @@ export default function HighImpactHero() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section>
+    <section className="pt-17">
       <div className="mx-container">
         <div className="relative h-[80svh] min-h-205 flex items-center overflow-hidden">
           <Swiper
@@ -62,8 +62,9 @@ export default function HighImpactHero() {
             key={activeIndex}
             className="absolute bottom-8 right-8 z-10 max-w-xs pointer-events-none hero-description"
           >
+            <p className="mb-2.5">{HERO_SLIDES[activeIndex].description}</p>
             <h3>{HERO_SLIDES[activeIndex].name}</h3>
-            <p>{HERO_SLIDES[activeIndex].description}</p>
+            <h4>{HERO_SLIDES[activeIndex].price}</h4>
           </div>
           <div className="absolute bottom-8 left-8 z-10 flex justify-center gap-4">
             <Button

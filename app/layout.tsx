@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import "@/styles/index.scss";
 import localFont from "next/font/local";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const satoshi = localFont({
   src: [
@@ -50,6 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn("antialiased", satoshi.variable)}>
       <body className="min-h-screen flex flex-col">
+        <Header />
         <main className="flex-1 flex flex-col section-gap">{children}</main>
         <Footer />
       </body>
