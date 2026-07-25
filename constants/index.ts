@@ -80,3 +80,35 @@ export const TESTIMONIALS: TestimonialCard[] = [
     image: "/images/testimonials/emily-johnson.jpg",
   },
 ];
+
+export const FOOTER = [
+  {
+    title: "SHOP",
+    links: [
+      { name: "New Arrivals", href: "/new-arrivals" },
+      { name: "All", href: "/shop-all" },
+      { name: "Tees", href: "/tees" },
+      { name: "Bottoms", href: "/bottoms" },
+      { name: "Outerwear", href: "/outerwear" },
+      { name: "Headwear", href: "/headwear" },
+    ],
+  },
+  {
+    title: "BRAND",
+    links: [
+      { name: "About", href: "/about" },
+      { name: "Contact", href: "/contact" },
+      { name: "Privacy Policy", href: "/privacy-policy" },
+      { name: "Terms of Service", href: "/terms-of-service" },
+    ],
+  },
+  {
+    title: "SOCIAL",
+    links: [
+      { name: "Facebook", href: "https://www.facebook.com" },
+      { name: "Instagram", href: "https://www.instagram.com" },
+      { name: "Twitter", href: "https://www.twitter.com" },
+      { name: "Pinterest", href: "https://www.pinterest.com" },
+    ],
+  },
+];
