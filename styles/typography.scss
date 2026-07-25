@@ -1,27 +1,27 @@
 @use "includes" as *;
 
-@mixin type($size-min, $size-max, $weight, $spacing) {
+@mixin heading($size-min, $size-max) {
   font-size: responsive-values($size-min, $size-max);
   line-height: 1.1em;
-  letter-spacing: $spacing;
-  font-weight: $weight;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-family: var(--font-heading);
 }
 
 h1,
 .is-typography--t1 {
-  @include type(30, 40, 400, normal);
-  font-family: var(--font-heading);
+  @include heading(30, 40);
 }
 
-// h2,
-// .is-typography--t2 {
-//   @include type(36, 56, 600, -2px);
-// }
+h2,
+.is-typography--t2 {
+  @include heading(22, 30);
+}
 
-// h3,
-// .is-typography--t3 {
-//   @include type(30, 40, 600, -0.8px);
-// }
+h3,
+.is-typography--t3 {
+  @include heading(26, 26);
+}
 
 // h4,
 // .is-typography--t4 {
@@ -45,13 +45,14 @@ h1,
 //   @include type(40, 82, 600, -1.5px);
 // }
 
-// p,
-// .is-typography--body {
-//   font-size: rem(16);
-//   line-height: 1.2em;
-//   letter-spacing: normal;
-//   font-weight: 400;
-// }
+p,
+.is-typography--body {
+  font-size: rem(16);
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-family: var(--font-satoshi);
+}
 
 // .is-typography--link {
 //   font-size: rem(16);

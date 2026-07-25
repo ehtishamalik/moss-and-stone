@@ -1,5 +1,6 @@
 import type { ImageProps } from "next/image";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 import Placeholder from "@/public/placeholder.png";
 
 type MediaProps = ImageProps & {
@@ -18,12 +19,19 @@ export default function Media({
   );
 }
 
-export function PlaceholderMedia() {
+export function PlaceholderMedia({
+  className,
+  imgClassName,
+}: {
+  className?: string;
+  imgClassName?: string;
+}) {
   return (
     <Media
       src={Placeholder}
       alt="placeholder image"
-      imgClassName="object-cover size-full"
+      imgClassName={cn("object-cover size-full", imgClassName)}
+      className={className}
     />
   );
 }

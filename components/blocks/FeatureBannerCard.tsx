@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export default function FeatureBannerCard() {
   return (
-    <section className="mx-4">
+    <section className="section-padding mx-4">
       <div className="bg-primary text-primary-foreground rounded-none py-20 px-5">
         <div className="mx-container">
           <div className="grid grid-cols-[1.5fr_1fr] gap-10">
