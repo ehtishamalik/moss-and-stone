@@ -1,4 +1,4 @@
-import type { CategoryCard, ProductCard } from "@/types";
+import type { CategoryCard, ProductCard, TestimonialCard } from "@/types";
 
 export const CATEGORY_GRID: CategoryCard[] = [
   {
@@ -57,5 +57,26 @@ export const PRODUCT_GRID: ProductCard[] = [
     price: "$89.99",
     image: true,
     link: "/heavyweight-crewneck-sweatshirt",
+  },
+];
+
+export const TESTIMONIALS: TestimonialCard[] = [
+  {
+    testimonial:
+      "Moss & Stone has completely changed my wardrobe. The quality is unmatched!",
+    name: "Jane Doe",
+    image: "/images/testimonials/jane-doe.jpg",
+  },
+  {
+    testimonial:
+      "I love the timeless designs and the comfort of their clothing. Highly recommend!",
+    name: "John Smith",
+    image: "/images/testimonials/john-smith.jpg",
+  },
+  {
+    testimonial:
+      "The customer service is fantastic, and the products are even better. I'm a loyal fan now!",
+    name: "Emily Johnson",
+    image: "/images/testimonials/emily-johnson.jpg",
   },
 ];

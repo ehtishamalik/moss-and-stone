@@ -11,3 +11,9 @@ export type ProductCard = {
   image: boolean;
   link: string;
 };
+
+export type TestimonialCard = {
+  testimonial: string;
+  name: string;
+  image: string;
+};

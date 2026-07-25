@@ -3,14 +3,21 @@
 
 .px-container {
   width: 100%;
-  max-width: map.get($breakpoints, "xxl"); // Access the 'xxl' breakpoint
+  max-width: breakpoint("xxl"); // Access the 'xxl' breakpoint
   padding: 0 responsive-values(20, 64);
+  margin: 0 auto;
+}
+
+.px-container-lite {
+  width: 100%;
+  max-width: breakpoint("xxl"); // Access the 'xxl' breakpoint
+  padding: 0 responsive-values(0, 16);
   margin: 0 auto;
 }
 
 .mx-container {
   width: 100%;
-  max-width: map.get($breakpoints, "xxl"); // Access the 'xxl' breakpoint
+  max-width: breakpoint("xxl"); // Access the 'xxl' breakpoint
   margin: 0 auto;
 }
 
