@@ -1,0 +1,30 @@
+.swiper-slide picture {
+  transition:
+    transform 0.5s cubic-bezier(.22, 1, .36, 1),
+    opacity 0.5s cubic-bezier(.22, 1, .36, 1);
+  will-change: transform, opacity;
+  transform:
+    translateY(calc(var(--progress, 0) * 96px)) scale(calc(1 - abs(var(--progress, 0)) * .1));
+  opacity: 0.5;
+}
+
+.swiper-slide-active picture {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.hero-description {
+  animation: heroContent .6s cubic-bezier(.22, 1, .36, 1);
+}
+
+@keyframes heroContent {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

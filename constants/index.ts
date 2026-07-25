@@ -138,3 +138,66 @@ export const FOOTER = [
     ],
   },
 ];
+
+export const HERO_SLIDES = [
+  {
+    name: "Cargo Pants",
+    description:
+      "Utility-inspired cargo pants crafted from durable cotton twill with relaxed comfort and everyday versatility.",
+    price: "$89",
+  },
+  {
+    name: "Denim Jeans",
+    description:
+      "Premium straight-fit denim featuring a timeless wash, reinforced stitching, and a comfortable all-day fit.",
+    price: "$95",
+  },
+  {
+    name: "Oversized Shirt",
+    description:
+      "Relaxed oversized shirt made from breathable cotton with a clean silhouette for effortless styling.",
+    price: "$68",
+  },
+  {
+    name: "Graphic T-Shirt",
+    description:
+      "Soft heavyweight tee finished with bold graphic artwork and a modern oversized cut.",
+    price: "$42",
+  },
+  {
+    name: "Bomber Jacket",
+    description:
+      "Lightweight bomber jacket with ribbed trims and a minimal design, perfect for layering year-round.",
+    price: "$129",
+  },
+  {
+    name: "Hoodie",
+    description:
+      "Brushed fleece hoodie offering premium warmth, an oversized fit, and subtle embroidered branding.",
+    price: "$78",
+  },
+  {
+    name: "Varsity Jacket",
+    description:
+      "Classic varsity jacket featuring wool-blend construction, faux leather sleeves, and heritage-inspired details.",
+    price: "$159",
+  },
+  {
+    name: "Pleated Trousers",
+    description:
+      "Tailored pleated trousers combining modern structure with relaxed comfort for elevated everyday wear.",
+    price: "$98",
+  },
+  {
+    name: "Flannel Shirt",
+    description:
+      "Soft brushed flannel shirt with a classic check pattern, designed for layering in cooler seasons.",
+    price: "$72",
+  },
+  {
+    name: "Denim Shorts",
+    description:
+      "Relaxed-fit denim shorts with a vintage-inspired wash, delivering casual comfort and effortless style.",
+    price: "$64",
+  },
+];

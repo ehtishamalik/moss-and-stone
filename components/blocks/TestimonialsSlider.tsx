@@ -15,12 +15,7 @@ export default function TestimonialsSlider() {
           quality of our everyday essentials
         </p>
         <div>
-          <Swiper
-            spaceBetween={0}
-            slidesPerView={1}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
+          <Swiper spaceBetween={0} slidesPerView={1}>
             {TESTIMONIALS.map((testimonial, index) => (
               <SwiperSlide key={index}>
                 <TestimonialCard
