@@ -13,7 +13,7 @@ export default function Media({
   ...props
 }: MediaProps) {
   return (
-    <picture className={className}>
+    <picture className={cn("relative block overflow-hidden", className)}>
       <Image className={imgClassName} {...props} />
     </picture>
   );
