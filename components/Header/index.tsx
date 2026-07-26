@@ -1,4 +1,5 @@
 import { MenuIcon } from "lucide-react";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -13,7 +14,9 @@ export default function Header() {
               <MenuIcon size={16} />
               Menu
             </button>
-            <p className="font-heading! text-2xl!">M & S</p>
+            <Link href="/" className="font-heading text-2xl">
+              M & S
+            </Link>
             <button
               type="button"
               className="flex items-center gap-2 px-5 border-l border-primary h-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300 text-xl font-normal"
