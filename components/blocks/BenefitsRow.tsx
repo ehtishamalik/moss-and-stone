@@ -6,7 +6,7 @@ export default function BenefitsRow() {
     <section>
       <div className="px-container">
         <h2 className="mb-2.5">CONSCIOUS CALCULATIONS</h2>
-        <p className="mb-10 max-w-md">
+        <p className="mb-5 md:mb-10 max-w-md">
           Total transparency. Meaningful metrics behind the environmental cost
           of our goods.
         </p>

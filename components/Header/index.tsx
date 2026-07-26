@@ -13,7 +13,7 @@ export default function Header() {
               <MenuIcon size={16} />
               Menu
             </button>
-            <p className="font-heading! text-2xl!">Moss & Stone</p>
+            <p className="font-heading! text-2xl!">M & S</p>
             <button
               type="button"
               className="flex items-center gap-2 px-5 border-l border-primary h-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300 text-xl font-normal"

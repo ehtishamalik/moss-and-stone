@@ -7,12 +7,12 @@ export default function CategoryGrid() {
       <div className="px-container">
         <div>
           <h2 className="mb-2.5">SHOP BY CATEGORY</h2>
-          <p className="mb-10 max-w-md">
+          <p className="mb-5 md:mb-10 max-w-md">
             Explore our curated collections of earth-toned essentials made for
             daily living.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-2.5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
           {CATEGORY_GRID.map((category) => (
             <CategoryCard
               key={category.title}

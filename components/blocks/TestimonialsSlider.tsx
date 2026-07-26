@@ -17,7 +17,7 @@ export default function TestimonialsSlider() {
         <div>
           <Swiper spaceBetween={0} slidesPerView={1}>
             {TESTIMONIALS.map((testimonial, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className="h-auto!">
                 <TestimonialCard
                   testimonial={testimonial.testimonial}
                   name={testimonial.name}

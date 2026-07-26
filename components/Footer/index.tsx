@@ -4,8 +4,8 @@ export default function Footer() {
   return (
     <footer className="pb-4">
       <div className="px-container">
-        <div className="p-5 flex gap-2.5 bg-primary text-primary-foreground">
-          <div className="flex-1 p-5 flex gap-5">
+        <div className="p-5 flex flex-col-reverse md:flex-row gap-16 md:gap-2.5 bg-primary text-primary-foreground">
+          <div className="flex-1 md:p-5 flex flex-col md:flex-row gap-10">
             {FOOTER.map((item, index) => (
               <div key={index} className="flex-1">
                 <p className="font-semibold! mb-5">{item.title}</p>
@@ -21,7 +21,7 @@ export default function Footer() {
               </div>
             ))}
           </div>
-          <div className="p-5 max-w-xs">
+          <div className="md:p-5 md:max-w-xs">
             <h3>Sign up to receive our promotions and news</h3>
           </div>
         </div>

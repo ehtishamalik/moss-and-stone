@@ -20,7 +20,7 @@ h2,
 
 h3,
 .is-typography--t3 {
-  @include heading(26, 26);
+  @include heading(19, 26);
 }
 
 h4,
@@ -28,18 +28,15 @@ h4,
   @include heading(18, 22);
 }
 
-// h5,
-// .is-typography--t5 {
-//   @include type(14, 16, 600, normal);
-// }
+h5,
+.is-typography--t5 {
+  @include heading(18, 18);
+}
 
-// h6,
-// .is-typography--t6 {
-//   font-size: rem(14);
-//   line-height: 1.2em;
-//   letter-spacing: normal;
-//   font-weight: 700;
-// }
+h6,
+.is-typography--t6 {
+  @include heading(16, 16);
+}
 
 // .is-typography--stat {
 //   @include type(40, 82, 600, -1.5px);
