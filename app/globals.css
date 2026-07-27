@@ -75,7 +75,7 @@
   --primary-foreground: #f4f1eb;
 
   --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
+  --input: #4a3129;
   --ring: rgb(0, 95, 204);
 
   --radius: 0.625rem;

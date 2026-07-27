@@ -9,20 +9,20 @@ export default function Header() {
           <div className="border border-primary bg-background h-12 flex items-center justify-between">
             <button
               type="button"
-              className="flex items-center gap-2 px-5 border-r border-primary h-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300 text-xl font-normal"
+              className="flex items-center gap-2 px-5 border-r border-primary h-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300 font-heading text-xl font-normal"
             >
-              <MenuIcon size={16} />
+              <MenuIcon size={20} />
               Menu
             </button>
             <Link href="/" className="font-heading text-2xl">
               M & S
             </Link>
-            <button
-              type="button"
-              className="flex items-center gap-2 px-5 border-l border-primary h-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300 text-xl font-normal"
+            <Link
+              href="/contact"
+              className="flex items-center gap-2 px-5 border-l border-primary h-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300 font-heading text-xl font-normal"
             >
               Contact
-            </button>
+            </Link>
           </div>
         </div>
       </div>
