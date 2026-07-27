@@ -19,7 +19,17 @@ export default function HighImpactHero() {
   return (
     <section className="md:pt-17 w-full overflow-hidden">
       <div className="mx-container">
-        <div className="relative h-185 lg:h-222 overflow-hidden">
+        <div className="relative h-222 overflow-hidden">
+          <div className="absolute top-0 left-0 z-10 pl-5 pt-20 md:pt-10 md:pl-10 max-w-md">
+            <h2 className="mb-2.5">NEW ARRIVALS</h2>
+            <p className="mb-5">
+              Curated earth tones and organic textures. <br /> Built for the
+              season ahead
+            </p>
+            <Button variant="outline" showArrow>
+              Explore All
+            </Button>
+          </div>
           <Swiper
             modules={[Autoplay, Navigation]}
             autoplay={{
@@ -66,15 +76,22 @@ export default function HighImpactHero() {
           </Swiper>
           <div
             key={activeIndex}
-            className="absolute bottom-0 right-0 p-5 z-10 max-w-75 md:max-w-xs pointer-events-none hero-description"
+            className="absolute bottom-0 right-0 p-5 z-10 max-w-75 md:max-w-md hero-description"
           >
             <p className="mb-2.5">{HERO_SLIDES[activeIndex].description}</p>
-            <h3>{HERO_SLIDES[activeIndex].name}</h3>
-            <h4>{HERO_SLIDES[activeIndex].price}</h4>
+            <div className="flex items-center justify-between gap-5">
+              <div>
+                <h3>{HERO_SLIDES[activeIndex].name}</h3>
+                <h4>{HERO_SLIDES[activeIndex].price}</h4>
+              </div>
+              <Button variant="outline" size="icon" />
+            </div>
           </div>
           <div className="md:flex hidden absolute bottom-8 left-8 z-10 justify-center gap-4">
             <Button
               type="button"
+              variant="outline"
+              size="icon"
               onClick={() => swiperRef.current?.slidePrev()}
             >
               <ArrowLeft />
@@ -82,6 +99,8 @@ export default function HighImpactHero() {
 
             <Button
               type="button"
+              variant="outline"
+              size="icon"
               onClick={() => swiperRef.current?.slideNext()}
             >
               <ArrowRight />

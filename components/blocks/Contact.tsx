@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <section>
       <div className="px-container">
-        <div className="grid grid-cols-[0.8fr_1fr] gap-2.5">
+        <div className="grid grid-cols-1 md:grid-cols-[0.8fr_1fr] gap-2.5">
           <div className="bg-card text-card-foreground border p-5">
             <h4 className="mb-10">SEND A MESSAGE</h4>
             <form className="space-y-5">
@@ -38,7 +38,7 @@ export default function Contact() {
                   placeholder="Write your message here..."
                 />
               </div>
-              <Button>Submit</Button>
+              <Button className="w-full">Submit</Button>
             </form>
           </div>
           <div className="space-y-2.5">

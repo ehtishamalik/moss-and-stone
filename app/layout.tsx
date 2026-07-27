@@ -5,6 +5,9 @@ import "@/styles/index.scss";
 import localFont from "next/font/local";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { Inter } from "next/font/google";
+
+const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
 const satoshi = localFont({
   src: [
@@ -49,7 +52,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("antialiased", satoshi.variable)}>
+    <html lang="en" className={cn("antialiased", satoshi.variable, "font-sans", inter.variable)}>
       <body className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1 flex flex-col section-gap">{children}</main>

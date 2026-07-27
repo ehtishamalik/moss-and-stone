@@ -2,7 +2,6 @@ import BenefitsRow from "@/components/blocks/BenefitsRow";
 import FeatureBannerCard from "@/components/blocks/FeatureBannerCard";
 import NewsletterCTA from "@/components/blocks/NewsletterCTA";
 import MediumImpactHero from "@/components/heros/MediumImpact";
-import { Button } from "@/components/ui/button";
 
 export default function About() {
   return (
@@ -13,7 +12,7 @@ export default function About() {
         <h2 className="mb-5">
           Truly <em>Transparent</em>
         </h2>
-        <div className="mb-10 space-y-2.5">
+        <div className="space-y-2.5">
           <p>
             <strong>Moss &amp; Stone</strong>, quiet luxury for the modern
             minimalist. Inspired by the resilience of the natural world, our
@@ -31,15 +30,13 @@ export default function About() {
             life. Experience the difference in our materials:
           </p>
         </div>
-
-        <Button>Read Story</Button>
       </FeatureBannerCard>
 
       <FeatureBannerCard variant="card" imagePosition="right">
         <h2 className="mb-5">
           From The <em>Ground Up</em>
         </h2>
-        <div className="mb-10 space-y-2.5">
+        <div className="space-y-2.5">
           <p>
             <strong>The Story:</strong> We were tired of clothing that felt
             disposable. The industry was shouting "faster, cheaper, newer," but
@@ -66,8 +63,6 @@ export default function About() {
             don't chase trends. <strong>We build archives.</strong>
           </p>
         </div>
-
-        <Button>Read Story</Button>
       </FeatureBannerCard>
 
       <BenefitsRow />

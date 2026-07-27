@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <>
       <HighImpactHero />
+
       <FeatureBannerCard fullWidth>
         <h1 className="mb-5">
           Soft as <em>Moss</em> <br /> Durable as <em>Stone</em>
@@ -23,8 +24,11 @@ export default function Home() {
           wearing something real.
         </p>
 
-        <Button>Read Story</Button>
+        <Button variant="outline" showArrow>
+          Read Story
+        </Button>
       </FeatureBannerCard>
+
       <CategoryGrid />
       <FeaturedProductsGrid />
       <TestimonialsSlider />

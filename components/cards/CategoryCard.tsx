@@ -18,7 +18,7 @@ export default function CategoryCard({
           </p>
           <div className="flex items-center justify-between">
             <h3 className="mb-2.5">{title}</h3>
-            <Button size="icon" variant="ghost">
+            <Button size="icon" variant="outline" showArrow>
               <ArrowUpRight />
             </Button>
           </div>
