@@ -9,13 +9,11 @@ export default function Contact() {
     <section>
       <div className="px-container">
         <div className="grid grid-cols-[0.8fr_1fr] gap-2.5">
-          <div className="bg-card text-card-foreground border border-primary p-5">
+          <div className="bg-card text-card-foreground border p-5">
             <h4 className="mb-10">SEND A MESSAGE</h4>
             <form className="space-y-5">
               <div className="space-y-2.5">
-                <Label htmlFor="name" className="text-base font-medium">
-                  Name
-                </Label>
+                <Label htmlFor="name">Name</Label>
                 <Input
                   type="text"
                   id="name"
@@ -24,9 +22,7 @@ export default function Contact() {
                 />
               </div>
               <div className="space-y-2.5">
-                <Label htmlFor="email" className="text-base font-medium">
-                  Email
-                </Label>
+                <Label htmlFor="email">Email</Label>
                 <Input
                   type="email"
                   id="email"
@@ -35,9 +31,7 @@ export default function Contact() {
                 />
               </div>
               <div className="space-y-2.5">
-                <Label htmlFor="message" className="text-base font-medium">
-                  Message
-                </Label>
+                <Label htmlFor="message">Message</Label>
                 <Textarea
                   id="message"
                   name="message"
@@ -48,7 +42,7 @@ export default function Contact() {
             </form>
           </div>
           <div className="space-y-2.5">
-            <div className="bg-card text-card-foreground border border-primary p-5">
+            <div className="bg-card text-card-foreground border p-5">
               <h4 className="mb-2.5">CUSTOMER CARE</h4>
               <p className="mb-5">
                 For immediate assistance with orders or returns.
@@ -66,7 +60,7 @@ export default function Contact() {
                 <p>Hours: Monday – Friday, 9am – 6pm</p>
               </div>
             </div>
-            <div className="bg-card text-card-foreground border border-primary p-5">
+            <div className="bg-card text-card-foreground border p-5">
               <h4 className="mb-2.5">OUR STUDIO</h4>
               <p className="mb-5">We currently have only one studio</p>
               <p className="font-bold!">

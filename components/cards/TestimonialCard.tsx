@@ -12,7 +12,7 @@ export default function TestimonialCard({
           <h2 className="mb-10">"{testimonial}"</h2>
           <h4 className="">{name}</h4>
         </div>
-        <PlaceholderMedia className="h-100 max-w-xs border-primary border-8" />
+        <PlaceholderMedia className="h-100 max-w-xs border-4" />
       </div>
     </div>
   );
