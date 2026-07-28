@@ -92,6 +92,7 @@ export default function HighImpactHero() {
               type="button"
               variant="outline"
               size="icon"
+              arrowTilt="left"
               onClick={() => swiperRef.current?.slidePrev()}
             >
               <ArrowLeft />
@@ -101,6 +102,7 @@ export default function HighImpactHero() {
               type="button"
               variant="outline"
               size="icon"
+              arrowTilt="right"
               onClick={() => swiperRef.current?.slideNext()}
             >
               <ArrowRight />

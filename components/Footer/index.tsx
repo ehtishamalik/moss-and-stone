@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FOOTER } from "@/constants";
 import { Button } from "../ui/button";
 
@@ -14,7 +15,7 @@ export default function Footer() {
                   <ul className="space-y-2">
                     {item.links.map((link, linkIndex) => (
                       <li key={linkIndex}>
-                        <a href={link.href}>{link.name}</a>
+                        <Link href={link.href}>{link.name}</Link>
                       </li>
                     ))}
                   </ul>
@@ -34,7 +35,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="px-5 md:px-10 py-2.5 bg-primary text-primary-foreground border-t border-background">
-          <h4>M & S</h4>
+          <h4>Baba Tailors &copy; {new Date().getFullYear()}</h4>
         </div>
       </div>
     </footer>

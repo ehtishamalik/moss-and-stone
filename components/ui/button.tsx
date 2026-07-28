@@ -1,4 +1,3 @@
-import { Slot, Slottable } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 import { ArrowUpRightIcon } from "lucide-react";
 import type * as React from "react";
@@ -36,30 +35,24 @@ function Button({
   className,
   variant = "default",
   size = "default",
-  asChild = false,
   showArrow = false,
+  arrowTilt = "upRight",
   children,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
-    asChild?: boolean;
     showArrow?: boolean;
+    arrowTilt?: "left" | "right" | "upRight";
   }) {
-  const Comp = asChild ? Slot : "button";
-
   return (
-    <Comp
+    <button
       data-slot="button"
       data-variant={variant}
       data-size={size}
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
     >
-      {size === "default" && (
-        <span className="px-2.5">
-          <Slottable>{children}</Slottable>
-        </span>
-      )}
+      {size === "default" && <span className="px-2.5">{children}</span>}
       {(showArrow || size === "icon") && (
         <span
           className={cn(
@@ -73,16 +66,36 @@ function Button({
           <ArrowUpRightIcon
             size={20}
             data-slot="arrow-left"
-            className="absolute -translate-x-10 translate-y-10 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300 ease-in-out will-change-transform"
+            className={cn(
+              "absolute transition-all duration-300 ease-in-out will-change-transform",
+              {
+                "-translate-x-10 translate-y-10 group-hover:translate-x-0 group-hover:translate-y-0":
+                  arrowTilt === "upRight",
+                "translate-x-10 translate-y-0 group-hover:translate-x-0 group-hover:translate-y-0 rotate-225":
+                  arrowTilt === "left",
+                "-translate-x-10 translate-y-0 group-hover:translate-x-0 group-hover:translate-y-0 rotate-45":
+                  arrowTilt === "right",
+              },
+            )}
           />
           <ArrowUpRightIcon
             size={20}
             data-slot="arrow-right"
-            className="absolute translate-x-0 translate-y-0 group-hover:translate-x-10 group-hover:-translate-y-10 transition-all duration-300 ease-in-out will-change-transform"
+            className={cn(
+              "absolute transition-all duration-300 ease-in-out will-change-transform",
+              {
+                "translate-x-0 translate-y-0 group-hover:translate-x-10 group-hover:-translate-y-10":
+                  arrowTilt === "upRight",
+                "translate-x-0 translate-y-0 group-hover:-translate-x-10 group-hover:translate-y-0 rotate-225":
+                  arrowTilt === "left",
+                "translate-x-0 translate-y-0 group-hover:translate-x-10 group-hover:translate-y-0 rotate-45":
+                  arrowTilt === "right",
+              },
+            )}
           />
         </span>
       )}
-    </Comp>
+    </button>
   );
 }
 
