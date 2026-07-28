@@ -1,7 +1,62 @@
+import type { Metadata } from "next";
 import BenefitsRow from "@/components/blocks/BenefitsRow";
 import FeatureBannerCard from "@/components/blocks/FeatureBannerCard";
 import NewsletterCTA from "@/components/blocks/NewsletterCTA";
 import MediumImpactHero from "@/components/heros/MediumImpact";
+import { SERVER_URL } from "@/constants";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SERVER_URL),
+  title: "About Baba Tailors | Our Story & Craftsmanship",
+  description:
+    "Learn about Baba Tailors and our commitment to traditional craftsmanship, precision tailoring, and creating perfectly fitted garments for every occasion.",
+
+  keywords: [
+    "About Baba Tailors",
+    "tailoring craftsmanship",
+    "custom tailoring",
+    "men's tailoring",
+    "traditional tailoring",
+    "precision stitching",
+    "perfect fitting",
+    "tailor Gujranwala",
+  ],
+
+  alternates: {
+    canonical: `${SERVER_URL}/about`,
+  },
+
+  openGraph: {
+    title: "About Baba Tailors",
+    description:
+      "Discover the story behind Baba Tailors and our dedication to quality, craftsmanship, and perfectly tailored garments.",
+    url: `${SERVER_URL}/about`,
+    siteName: "Baba Tailors",
+    locale: "en_PK",
+    type: "website",
+    images: [
+      {
+        url: `${SERVER_URL}/images/alteration.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "About Baba Tailors",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "About Baba Tailors",
+    description:
+      "Traditional craftsmanship, modern tailoring, and garments made with purpose.",
+    images: [`${SERVER_URL}/images/alteration.jpg`],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function About() {
   return (

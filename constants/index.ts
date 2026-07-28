@@ -5,6 +5,9 @@ import type {
   TestimonialCard,
 } from "@/types";
 
+export const SERVER_URL =
+  process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:3000";
+
 export const CATEGORY_GRID: CategoryCard[] = [
   {
     title: "Shalwar Kameez",
