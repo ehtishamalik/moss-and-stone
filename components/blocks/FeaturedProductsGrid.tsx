@@ -6,10 +6,10 @@ export default function FeaturedProductsGrid() {
     <section>
       <div className="px-container">
         <div>
-          <h2 className="mb-2.5">BESTSELLERS</h2>
+          <h2 className="mb-2.5">Tailoring for Every Occasion</h2>
           <p className="mb-5 md:mb-10 max-w-md">
-            Shop the crowd favorites. These are the most-loved styles our
-            community adores.
+            From everyday essentials to wedding attire, our custom tailoring
+            ensures comfort, confidence, and timeless style.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-2.5">

@@ -5,10 +5,10 @@ export default function BenefitsRow() {
   return (
     <section>
       <div className="px-container">
-        <h2 className="mb-2.5">CONSCIOUS CALCULATIONS</h2>
+        <h2 className="mb-2.5">Why Baba Tailors</h2>
         <p className="mb-5 md:mb-10 max-w-md">
-          Total transparency. Meaningful metrics behind the environmental cost
-          of our goods.
+          Trusted by customers across Gujranwala for quality stitching, perfect
+          fitting, and dependable service.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5">
           {BENEFITS.map((benefit, index) => (

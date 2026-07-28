@@ -14,18 +14,16 @@ export default function Home() {
 
       <FeatureBannerCard fullWidth>
         <h1 className="mb-5">
-          Soft as <em>Moss</em> <br /> Durable as <em>Stone</em>
+          Crafted with <em>Care</em>
         </h1>
         <p className="mb-10">
-          We reject the temporary. In a world of fast trends, we choose the slow
-          path. Moss & Stone is built on a foundation of earth-toned essentials,
-          crafted from organic fibers designed to weather the seasons with you.
-          Quiet luxury isn't about the price tag—it's about the feeling of
-          wearing something real.
+          Every stitch reflects years of experience and dedication. Baba Tailors
+          combines traditional craftsmanship with modern tailoring to deliver
+          garments that fit perfectly and look exceptional.
         </p>
 
         <Button variant="outline" showArrow>
-          Read Story
+          Learn More
         </Button>
       </FeatureBannerCard>
 

@@ -7,61 +7,62 @@ import type {
 
 export const CATEGORY_GRID: CategoryCard[] = [
   {
-    title: "TEES",
-    description: "Discover our range of stylish and comfortable clothing.",
-    link: "/tees",
+    title: "Shalwar Kameez",
+    description:
+      "Traditional stitching with modern fitting and premium finishing.",
+    link: "/shalwar-kameez",
     image: true,
   },
   {
-    title: "BOTTOMS",
-    description: "Discover our range of stylish and comfortable clothing.",
-    link: "/bottoms",
+    title: "Sherwani Tailoring",
+    description: "Elegant wedding wear tailored to your exact measurements.",
+    link: "/sherwani-tailoring",
     image: true,
   },
   {
-    title: "OUTERWEAR",
-    description: "Discover our range of stylish and comfortable clothing.",
-    link: "/outerwear",
+    title: "Suit Tailoring",
+    description: "Custom suits designed for business and special occasions.",
+    link: "/suit-tailoring",
     image: true,
   },
   {
-    title: "HEADWEAR",
-    description: "Discover our range of stylish and comfortable clothing.",
-    link: "/headwear",
+    title: "Waistcoat Tailoring",
+    description: "Classic styles finished with precision and clean detailing.",
+    link: "/waistcoat-tailoring",
     image: true,
   },
   {
-    title: "NEW ARRIVALS",
-    description: "Discover our range of stylish and comfortable clothing.",
-    link: "/new-arrivals",
+    title: "Kurta Pajama",
+    description: "Comfortable tailoring for everyday and festive occasions.",
+    link: "/kurta-pajama",
     image: true,
   },
   {
-    title: "SHOP ALL",
-    description: "Discover our range of stylish and comfortable clothing.",
-    link: "/shop-all",
+    title: "Pant Tailoring",
+    description: "Perfectly fitted trousers with quality craftsmanship.",
+    link: "/pant-tailoring",
     image: false,
   },
 ];
 
 export const PRODUCT_GRID: ProductCard[] = [
   {
-    title: "Rekaxed Cargo Pant",
-    price: "$29.99",
+    title: "Custom Shalwar Kameez",
+    price: "PKR 2,000",
     image: true,
-    link: "/rekaxed-cargo-pant",
+    link: "/custom-shalwar-kameez",
   },
   {
-    title: "Structure Hoodie",
-    price: "$49.99",
+    title: "Sherwani Tailoring",
+    price: "PKR 12,000",
     image: true,
-    link: "/structure-hoodie",
+    link: "/sherwani-tailoring",
   },
   {
-    title: "Heavyweight Crewneck Sweatshirt",
-    price: "$89.99",
+    title: "Suit Tailoring",
+    price: "PKR 8,500",
     image: true,
-    link: "/heavyweight-crewneck-sweatshirt",
+    link: "/suit-tailoring",
   },
 ];
 
@@ -88,22 +89,22 @@ export const TESTIMONIALS: TestimonialCard[] = [
 
 export const BENEFITS: BenefitsCard[] = [
   {
-    title: "0g Plastic in our packaging",
-    descriptionStrong: "The Zero-Waste Equation.",
+    title: "Perfect Fit",
+    descriptionStrong: "Every garment is tailored",
     description:
-      "We’ve subtracted plastic entirely, delivering your garments in 100% biodegradable materials for an unboxing as clean as our conscience.",
+      " to your exact measurements, ensuring exceptional comfort, confidence, and a flawless fit every time.",
   },
   {
-    title: "100% GOTS Certified Cotton",
-    descriptionStrong: "The Pure Provenance.",
+    title: "Fine Craftsmanship",
+    descriptionStrong: "Every stitch is completed",
     description:
-      "Sourced without compromise, our GOTS-certified fibers ensure a breathable luxury that respects both your skin and the health of the soil.",
+      " with precision and care, reflecting the experience and attention to detail behind our tailoring.",
   },
   {
-    title: "1 Year warranty on seams",
-    descriptionStrong: "The Promise of Longevity.",
+    title: "Premium Finish",
+    descriptionStrong: "From clean stitching",
     description:
-      " True luxury is durability. We back the structural integrity of every seam for a full year, ensuring your investment stands the test of time.",
+      " to refined detailing, each garment is finished to the highest standards for lasting quality and style.",
   },
 ];
 
@@ -141,63 +142,63 @@ export const FOOTER = [
 
 export const HERO_SLIDES = [
   {
-    name: "Cargo Pants",
+    name: "Shalwar Kameez",
     description:
-      "Utility-inspired cargo pants crafted from durable cotton twill with relaxed comfort and everyday versatility.",
-    price: "$89",
+      "Expertly tailored shalwar kameez crafted to your exact measurements for lasting comfort, style, and a perfect fit.",
+    price: "PKR 2,000",
   },
   {
-    name: "Denim Jeans",
+    name: "Designer Shalwar Kameez",
     description:
-      "Premium straight-fit denim featuring a timeless wash, reinforced stitching, and a comfortable all-day fit.",
-    price: "$95",
+      "Premium designer stitching with refined detailing and modern cuts, tailored for special occasions and everyday elegance.",
+    price: "PKR 3,500",
   },
   {
-    name: "Oversized Shirt",
+    name: "Suit Tailoring",
     description:
-      "Relaxed oversized shirt made from breathable cotton with a clean silhouette for effortless styling.",
-    price: "$68",
+      "Custom-made suits designed with precision craftsmanship, delivering a sharp fit for business and formal occasions.",
+    price: "PKR 8,500",
   },
   {
-    name: "Graphic T-Shirt",
+    name: "Sherwani",
     description:
-      "Soft heavyweight tee finished with bold graphic artwork and a modern oversized cut.",
-    price: "$42",
+      "Elegant sherwanis tailored for weddings and celebrations, combining traditional craftsmanship with a flawless fit.",
+    price: "PKR 12,000",
   },
   {
-    name: "Bomber Jacket",
+    name: "Waistcoat",
     description:
-      "Lightweight bomber jacket with ribbed trims and a minimal design, perfect for layering year-round.",
-    price: "$129",
+      "Classic and contemporary waistcoats stitched to complement your outfit with exceptional finishing and comfort.",
+    price: "PKR 5,000",
   },
   {
-    name: "Hoodie",
+    name: "Kurta Pajama",
     description:
-      "Brushed fleece hoodie offering premium warmth, an oversized fit, and subtle embroidered branding.",
-    price: "$78",
+      "Comfortable kurta pajama tailoring featuring clean stitching, premium finishing, and a fit made just for you.",
+    price: "PKR 2,500",
   },
   {
-    name: "Varsity Jacket",
+    name: "Coat Tailoring",
     description:
-      "Classic varsity jacket featuring wool-blend construction, faux leather sleeves, and heritage-inspired details.",
-    price: "$159",
+      "Custom coats tailored with careful attention to detail, offering timeless style, comfort, and durability.",
+    price: "PKR 7,500",
   },
   {
-    name: "Pleated Trousers",
+    name: "Pant Tailoring",
     description:
-      "Tailored pleated trousers combining modern structure with relaxed comfort for elevated everyday wear.",
-    price: "$98",
+      "Perfectly fitted trousers tailored to your measurements with clean lines and superior craftsmanship.",
+    price: "PKR 2,000",
   },
   {
-    name: "Flannel Shirt",
+    name: "Alterations",
     description:
-      "Soft brushed flannel shirt with a classic check pattern, designed for layering in cooler seasons.",
-    price: "$72",
+      "Professional clothing alterations to improve fit, comfort, and appearance while preserving the original garment.",
+    price: "From PKR 500",
   },
   {
-    name: "Denim Shorts",
+    name: "Uniform Tailoring",
     description:
-      "Relaxed-fit denim shorts with a vintage-inspired wash, delivering casual comfort and effortless style.",
-    price: "$64",
+      "High-quality uniform stitching for schools, businesses, and organizations with reliable workmanship and timely delivery.",
+    price: "From PKR 2,500",
   },
 ];

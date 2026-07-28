@@ -21,13 +21,13 @@ export default function HighImpactHero() {
       <div className="mx-container">
         <div className="relative h-222 overflow-hidden">
           <div className="absolute top-0 left-0 z-10 pl-5 pt-20 md:pt-10 md:pl-10 max-w-md">
-            <h2 className="mb-2.5">NEW ARRIVALS</h2>
+            <h2 className="mb-2.5">Premium Men's Tailoring</h2>
             <p className="mb-5">
-              Curated earth tones and organic textures. <br /> Built for the
-              season ahead
+              Expert tailoring for shalwar kameez, suits, sherwanis, and formal
+              wear with precision, comfort, and timeless craftsmanship.
             </p>
             <Button variant="outline" showArrow>
-              Explore All
+              Book a Visit
             </Button>
           </div>
           <Swiper

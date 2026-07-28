@@ -10,57 +10,66 @@ export default function About() {
 
       <FeatureBannerCard variant="card">
         <h2 className="mb-5">
-          Truly <em>Transparent</em>
+          Precision in Every <em>Stitch</em>
         </h2>
         <div className="space-y-2.5">
           <p>
-            <strong>Moss &amp; Stone</strong>, quiet luxury for the modern
-            minimalist. Inspired by the resilience of the natural world, our
-            garments are designed, engineered, and crafted to outlast the trend
-            cycle.
+            <strong>Baba Tailors</strong> brings together traditional
+            craftsmanship and modern tailoring to create garments that fit
+            perfectly and stand the test of time. Every stitch is{" "}
+            <strong>carefully planned</strong>, measured, and finished to
+            reflect our commitment to quality.
           </p>
           <p>
-            We’re proud to reject the industry standard of "fast and cheap."
-            Instead, we support a supply chain that honors the earth—using only{" "}
-            <strong>GOTS certified organic cotton</strong> and{" "}
-            <strong>eliminating 100% of plastic</strong> from our process.
+            We believe great tailoring is never rushed. From taking precise
+            measurements to delivering a <strong>flawless finish</strong>, every
+            garment is crafted with attention to detail using techniques refined
+            through
+            <strong>years of experience</strong>.
           </p>
           <p>
-            A textured, timeless, and versatile wardrobe to ground your everyday
-            life. Experience the difference in our materials:
+            Whether it's a daily wear shalwar kameez, a business suit, or a
+            wedding sherwani, each piece is{" "}
+            <strong>tailored to your measurements</strong>, style, and
+            occasion—because true confidence begins with the perfect fit.
           </p>
         </div>
       </FeatureBannerCard>
 
       <FeatureBannerCard variant="card" imagePosition="right">
         <h2 className="mb-5">
-          From The <em>Ground Up</em>
+          From The First <em>Stitch</em>
         </h2>
         <div className="space-y-2.5">
           <p>
-            <strong>The Story:</strong> We were tired of clothing that felt
-            disposable. The industry was shouting "faster, cheaper, newer," but
-            we were looking for <strong>silence</strong>. We wanted garments
-            that felt <strong>substantial</strong>—pieces that didn't just cover
-            you, but grounded you.
+            <strong>The Story:</strong> We started with a simple belief: great
+            clothing should feel personal. In a world filled with ready-made
+            garments and rushed production, we wanted to bring back the{" "}
+            <strong>art of tailoring</strong>—where every measurement matters
+            and every piece is <strong>made with purpose</strong>.
           </p>
           <p>
-            Our early days were spent obsessing over what others overlooked. We
-            tested countless fabrics, rejecting anything synthetic or lifeless.
-            We looked to nature—
-            <strong>the resilience of stone, the softness of moss</strong>
-            —and realized that the best design had already been done by the{" "}
-            <strong>earth</strong>.
+            Our early days were spent <strong>perfecting the details</strong>{" "}
+            others overlooked. We focused on precise measurements, quality
+            stitching, and timeless designs that{" "}
+            <strong>deliver comfort and confidence</strong>. We learned that
+            true craftsmanship is not about following trends, but about creating
+            <strong>garments that feel right</strong> for the person wearing
+            them.
           </p>
           <p>
-            We chose the hard path. Sourcing{" "}
-            <strong>GOTS-certified cotton</strong> and{" "}
-            <strong>eliminating plastics</strong> wasn't the easiest way to
-            start a business, but it was the only way that felt honest.
+            We chose the path of <strong>patience and precision</strong>. Taking
+            the time to understand each customer, refine every stitch, and
+            deliver exceptional finishing wasn't the easiest way to grow a
+            business, but it was the only way that{" "}
+            <strong>felt authentic</strong>.
           </p>
           <p>
-            Today, we remain a small team dedicated to that original purpose. We
-            don't chase trends. <strong>We build archives.</strong>
+            Today, <strong>Baba Tailors</strong> continues with the same
+            dedication that started it all. We don't just stitch clothes.{" "}
+            <strong>
+              We create pieces that become part of your most memorable moments.
+            </strong>
           </p>
         </div>
       </FeatureBannerCard>

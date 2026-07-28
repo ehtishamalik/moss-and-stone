@@ -1,4 +1,5 @@
 import { FOOTER } from "@/constants";
+import { Button } from "../ui/button";
 
 export default function Footer() {
   return (
@@ -22,10 +23,17 @@ export default function Footer() {
             ))}
           </div>
           <div className="md:p-5 md:max-w-xs">
-            <h3>Sign up to receive our promotions and news</h3>
+            <h3 className="mb-2.5">Let's Create Something Exceptional</h3>
+            <p className="mb-5">
+              Experience custom tailoring that's crafted to fit your style,
+              comfort, and confidence.
+            </p>
+            <Button variant={"secondary"} className="w-full">
+              Visit Our Shop
+            </Button>
           </div>
         </div>
-        <div className="px-5 py-2.5 bg-primary text-primary-foreground border-t border-background">
+        <div className="px-5 md:px-10 py-2.5 bg-primary text-primary-foreground border-t border-background">
           <h4>M & S</h4>
         </div>
       </div>

@@ -51,10 +51,10 @@ export default function Contact() {
                 <p>
                   Email:{" "}
                   <Link
-                    href="mailto:support@example.com"
+                    href="mailto:care@babatailors.com"
                     className="font-bold! hover:underline underline-offset-2"
                   >
-                    support@example.com
+                    care@babatailors.com
                   </Link>
                 </p>
                 <p>Hours: Monday – Friday, 9am – 6pm</p>
@@ -64,7 +64,9 @@ export default function Contact() {
               <h4 className="mb-2.5">OUR STUDIO</h4>
               <p className="mb-5">We currently have only one studio</p>
               <p className="font-bold!">
-                1204 Earth Tone Blvd, Suite 4B, Springfield, IL 62704
+                Jinnah Rd, near Dhullay Chowk, Islam Pura Rehmatpura,
+                <br />
+                Gujranwala, 52250, Pakistan
               </p>
             </div>
           </div>
