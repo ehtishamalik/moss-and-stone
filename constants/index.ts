@@ -68,21 +68,20 @@ export const PRODUCT_GRID: ProductCard[] = [
 
 export const TESTIMONIALS: TestimonialCard[] = [
   {
-    testimonial:
-      "Moss & Stone has completely changed my wardrobe. The quality is unmatched!",
-    name: "Jane Doe",
+    testimonial: "Absolutely in love with stiching. Too classy, too elegant ✨️",
+    name: "Muhammad Murtaza",
     image: "/images/testimonials/jane-doe.jpg",
   },
   {
     testimonial:
-      "I love the timeless designs and the comfort of their clothing. Highly recommend!",
-    name: "John Smith",
+      "Very good excelent working two peice three peice all groom suits itemes bespok stithing master i have highly recomended for all groom stitch you favorate suites baba tailors",
+    name: "Imran Sohail",
     image: "/images/testimonials/john-smith.jpg",
   },
   {
     testimonial:
-      "The customer service is fantastic, and the products are even better. I'm a loyal fan now!",
-    name: "Emily Johnson",
+      "this is one and only professional tailor in gujranwala best stitching master very good bespok three peice suite making",
+    name: "Tanha Khan",
     image: "/images/testimonials/emily-johnson.jpg",
   },
 ];

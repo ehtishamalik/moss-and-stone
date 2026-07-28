@@ -1,9 +1,12 @@
 "use client";
 
+import { A11y, Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import TestimonialCard from "@/components/cards/TestimonialCard";
 import { TESTIMONIALS } from "@/constants";
-import TestimonialCard from "../cards/TestimonialCard";
 import "swiper/css";
+import "swiper/css/pagination";
+import "./index.scss";
 
 export default function TestimonialsSlider() {
   return (
@@ -15,7 +18,14 @@ export default function TestimonialsSlider() {
           quality of our everyday essentials
         </p>
         <div>
-          <Swiper spaceBetween={0} slidesPerView={1}>
+          <Swiper
+            loop={true}
+            spaceBetween={0}
+            slidesPerView={1}
+            modules={[Pagination, A11y, Autoplay]}
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+          >
             {TESTIMONIALS.map((testimonial, index) => (
               <SwiperSlide key={index} className="h-auto!">
                 <TestimonialCard

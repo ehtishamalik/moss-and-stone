@@ -5,13 +5,16 @@ import NextLink from "next/link";
 import { useState } from "react";
 import {
   Drawer,
+  DrawerClose,
   DrawerContent,
   DrawerDescription,
+  DrawerFooter,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { cn } from "@/lib/utils";
+import { Button } from "../ui/button";
 import { Link } from "../ui/link";
 
 const links = [
@@ -27,6 +30,11 @@ const links = [
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header className="fixed top-0 w-full z-50">
       <div className="mx-container">
@@ -54,7 +62,7 @@ export default function Header() {
                     This action cannot be undone.
                   </DrawerDescription>
                 </DrawerHeader>
-                <ol className="flex flex-col gap-2.5 p-10">
+                <ol className="flex flex-col gap-2.5 py-5 px-10">
                   {links.map((link, index) => (
                     <li key={index}>
                       <Link
@@ -62,12 +70,18 @@ export default function Header() {
                         className="w-full justify-between"
                         showArrow
                         arrowTilt="right"
+                        onClick={handleClose}
                       >
                         {link.name}
                       </Link>
                     </li>
                   ))}
                 </ol>
+                <DrawerFooter className="px-10">
+                  <DrawerClose asChild>
+                    <Button variant={"outline"}>Close</Button>
+                  </DrawerClose>
+                </DrawerFooter>
               </DrawerContent>
             </Drawer>
 
