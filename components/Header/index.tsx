@@ -1,7 +1,7 @@
 "use client";
 
 import { MenuIcon, XIcon } from "lucide-react";
-import Link from "next/link";
+import NextLink from "next/link";
 import { useState } from "react";
 import {
   Drawer,
@@ -12,7 +12,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { cn } from "@/lib/utils";
-import { Button } from "../ui/button";
+import { Link } from "../ui/link";
 
 const links = [
   {
@@ -57,31 +57,32 @@ export default function Header() {
                 <ol className="flex flex-col gap-2.5 p-10">
                   {links.map((link, index) => (
                     <li key={index}>
-                      <Button
+                      <Link
+                        href={link.href}
                         className="w-full justify-between"
                         showArrow
                         arrowTilt="right"
                       >
                         {link.name}
-                      </Button>
+                      </Link>
                     </li>
                   ))}
                 </ol>
               </DrawerContent>
             </Drawer>
 
-            <Link
+            <NextLink
               href="/"
               className="font-heading text-2xl w-full text-center px-2.5"
             >
               Baba Tailors
-            </Link>
-            <Link
+            </NextLink>
+            <NextLink
               href="/contact"
               className="hidden sm:flex items-center gap-2 px-5 border-l h-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300 font-heading text-xl font-normal"
             >
               Contact
-            </Link>
+            </NextLink>
           </div>
         </div>
       </div>

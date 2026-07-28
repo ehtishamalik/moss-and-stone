@@ -1,6 +1,5 @@
-import Link from "next/link";
 import { FOOTER } from "@/constants";
-import { Button } from "../ui/button";
+import { Link } from "../ui/link";
 
 export default function Footer() {
   return (
@@ -29,9 +28,15 @@ export default function Footer() {
               Experience custom tailoring that's crafted to fit your style,
               comfort, and confidence.
             </p>
-            <Button variant={"secondary"} className="w-full">
+            <Link
+              href="https://maps.app.goo.gl/d8VtBuZLdomqUSSf9"
+              variant={"secondary"}
+              className="w-full"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Visit Our Shop
-            </Button>
+            </Link>
           </div>
         </div>
         <div className="px-5 md:px-10 py-2.5 bg-primary text-primary-foreground border-t border-background">

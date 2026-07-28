@@ -10,6 +10,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useRef, useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
 import { Button } from "@/components/ui/button";
+import { Link } from "@/components/ui/link";
 import { HERO_SLIDES } from "@/constants";
 
 export default function HighImpactHero() {
@@ -26,9 +27,15 @@ export default function HighImpactHero() {
               Expert tailoring for shalwar kameez, suits, sherwanis, and formal
               wear with precision, comfort, and timeless craftsmanship.
             </p>
-            <Button variant="outline" showArrow>
+            <Link
+              href="https://wa.me/+923005356545"
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="outline"
+              showArrow
+            >
               Book a Visit
-            </Button>
+            </Link>
           </div>
           <Swiper
             modules={[Autoplay, Navigation]}
@@ -84,7 +91,7 @@ export default function HighImpactHero() {
                 <h3>{HERO_SLIDES[activeIndex].name}</h3>
                 <h4>{HERO_SLIDES[activeIndex].price}</h4>
               </div>
-              <Button variant="outline" size="icon" />
+              <Link variant="outline" size="icon" href="/contact" />
             </div>
           </div>
           <div className="md:flex hidden absolute bottom-8 left-8 z-10 justify-center gap-4">

@@ -1,5 +1,5 @@
 import { PlaceholderMedia } from "../Media";
-import { Button } from "../ui/button";
+import { Link } from "../ui/link";
 
 export default function NewsletterCTA() {
   return (
@@ -14,9 +14,15 @@ export default function NewsletterCTA() {
               Visit Baba Tailors today and experience premium tailoring designed
               around your measurements.
             </p>
-            <Button variant="outline" showArrow>
+            <Link
+              href="https://maps.app.goo.gl/d8VtBuZLdomqUSSf9"
+              variant="outline"
+              showArrow
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Visit Our Shop
-            </Button>
+            </Link>
           </div>
         </div>
       </div>

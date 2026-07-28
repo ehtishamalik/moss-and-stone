@@ -1,7 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import type { CategoryCard as CategoryCardProps } from "@/types";
 import { PlaceholderMedia } from "../Media";
-import { Button } from "../ui/button";
+import { Link } from "../ui/link";
 
 export default function CategoryCard({
   title,
@@ -18,9 +18,9 @@ export default function CategoryCard({
           </p>
           <div className="flex items-center justify-between">
             <h3 className="mb-2.5">{title}</h3>
-            <Button size="icon" variant="outline" showArrow>
+            <Link href="/contact" size="icon" variant="outline" showArrow>
               <ArrowUpRight />
-            </Button>
+            </Link>
           </div>
         </div>
       </div>

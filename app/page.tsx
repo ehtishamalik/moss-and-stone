@@ -5,7 +5,7 @@ import FeaturedProductsGrid from "@/components/blocks/FeaturedProductsGrid";
 import NewsletterCTA from "@/components/blocks/NewsletterCTA";
 import TestimonialsSlider from "@/components/blocks/TestimonialsSlider";
 import HighImpactHero from "@/components/heros/HighImpact";
-import { Button } from "@/components/ui/button";
+import { Link } from "@/components/ui/link";
 
 export default function Home() {
   return (
@@ -22,9 +22,9 @@ export default function Home() {
           garments that fit perfectly and look exceptional.
         </p>
 
-        <Button variant="outline" showArrow>
+        <Link href="/about" variant="outline" showArrow>
           Learn More
-        </Button>
+        </Link>
       </FeatureBannerCard>
 
       <CategoryGrid />
