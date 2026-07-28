@@ -14,7 +14,11 @@ export default function Media({
 }: MediaProps) {
   return (
     <picture className={cn("relative block overflow-hidden", className)}>
-      <Image className={imgClassName} {...props} />
+      <Image
+        className={cn("object-cover size-full", imgClassName)}
+        fill
+        {...props}
+      />
     </picture>
   );
 }

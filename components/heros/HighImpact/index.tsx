@@ -2,7 +2,7 @@
 
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { PlaceholderMedia } from "@/components/Media";
+import Media from "@/components/Media";
 import "swiper/css";
 import "./index.scss";
 import "swiper/css/navigation";
@@ -48,7 +48,6 @@ export default function HighImpactHero() {
               swiperRef.current = swiper;
             }}
             onSlideChange={(swiper: SwiperType) => {
-              console.log("slide change", swiper.realIndex);
               setActiveIndex(swiper.realIndex);
             }}
             spaceBetween={32}
@@ -75,9 +74,16 @@ export default function HighImpactHero() {
               },
             }}
           >
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
-              <SwiperSlide key={item} className="flex! items-center">
-                <PlaceholderMedia className="w-full h-100 md:h-140" />
+            {HERO_SLIDES.map((item, index) => (
+              <SwiperSlide
+                key={`${item.name}-${index}`}
+                className="flex! items-center"
+              >
+                <Media
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full h-100 md:h-140"
+                />
               </SwiperSlide>
             ))}
           </Swiper>

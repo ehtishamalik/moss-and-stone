@@ -11,37 +11,37 @@ export const CATEGORY_GRID: CategoryCard[] = [
     description:
       "Traditional stitching with modern fitting and premium finishing.",
     link: "/shalwar-kameez",
-    image: true,
+    image: "/images/shalwar-kameez.webp",
   },
   {
     title: "Sherwani Tailoring",
     description: "Elegant wedding wear tailored to your exact measurements.",
     link: "/sherwani-tailoring",
-    image: true,
+    image: "/images/sherwani.jpg",
   },
   {
     title: "Suit Tailoring",
     description: "Custom suits designed for business and special occasions.",
     link: "/suit-tailoring",
-    image: true,
+    image: "/images/coat-alteration.jpg",
   },
   {
     title: "Waistcoat Tailoring",
     description: "Classic styles finished with precision and clean detailing.",
     link: "/waistcoat-tailoring",
-    image: true,
+    image: "/images/waist-coat.jpg",
   },
   {
     title: "Kurta Pajama",
     description: "Comfortable tailoring for everyday and festive occasions.",
     link: "/kurta-pajama",
-    image: true,
+    image: "/images/kurta-pajama.jpg",
   },
   {
     title: "Pant Tailoring",
     description: "Perfectly fitted trousers with quality craftsmanship.",
     link: "/pant-tailoring",
-    image: false,
+    image: "/images/pants.jpg",
   },
 ];
 
@@ -49,19 +49,19 @@ export const PRODUCT_GRID: ProductCard[] = [
   {
     title: "Custom Shalwar Kameez",
     price: "PKR 2,000",
-    image: true,
+    image: "/images/designer-shalwar-kameez.jpg",
     link: "/custom-shalwar-kameez",
   },
   {
     title: "Sherwani Tailoring",
     price: "PKR 12,000",
-    image: true,
+    image: "/images/sherwani.jpg",
     link: "/sherwani-tailoring",
   },
   {
     title: "Suit Tailoring",
     price: "PKR 8,500",
-    image: true,
+    image: "/images/coat-alteration.jpg",
     link: "/suit-tailoring",
   },
 ];
@@ -145,59 +145,62 @@ export const HERO_SLIDES = [
     description:
       "Expertly tailored shalwar kameez crafted to your exact measurements for lasting comfort, style, and a perfect fit.",
     price: "PKR 2,000",
+    image: "/images/shalwar-kameez.webp",
   },
   {
     name: "Designer Shalwar Kameez",
     description:
       "Premium designer stitching with refined detailing and modern cuts, tailored for special occasions and everyday elegance.",
     price: "PKR 3,500",
+    image: "/images/designer-shalwar-kameez.jpg",
   },
   {
     name: "Suit Tailoring",
     description:
       "Custom-made suits designed with precision craftsmanship, delivering a sharp fit for business and formal occasions.",
     price: "PKR 8,500",
+    image: "/images/3-piece.jpg",
   },
   {
     name: "Sherwani",
     description:
       "Elegant sherwanis tailored for weddings and celebrations, combining traditional craftsmanship with a flawless fit.",
     price: "PKR 12,000",
+    image: "/images/sherwani.jpg",
   },
   {
     name: "Waistcoat",
     description:
       "Classic and contemporary waistcoats stitched to complement your outfit with exceptional finishing and comfort.",
     price: "PKR 5,000",
+    image: "/images/waist-coat.jpg",
   },
   {
     name: "Kurta Pajama",
     description:
       "Comfortable kurta pajama tailoring featuring clean stitching, premium finishing, and a fit made just for you.",
     price: "PKR 2,500",
+    image: "/images/kurta-pajama.jpg",
   },
   {
     name: "Coat Tailoring",
     description:
       "Custom coats tailored with careful attention to detail, offering timeless style, comfort, and durability.",
     price: "PKR 7,500",
+    image: "/images/coat-alteration.jpg",
   },
   {
     name: "Pant Tailoring",
     description:
       "Perfectly fitted trousers tailored to your measurements with clean lines and superior craftsmanship.",
     price: "PKR 2,000",
+    image: "/images/pants.jpg",
   },
   {
     name: "Alterations",
     description:
       "Professional clothing alterations to improve fit, comfort, and appearance while preserving the original garment.",
     price: "From PKR 500",
-  },
-  {
-    name: "Uniform Tailoring",
-    description:
-      "High-quality uniform stitching for schools, businesses, and organizations with reliable workmanship and timely delivery.",
-    price: "From PKR 2,500",
+    image: "/images/alteration.jpg",
   },
 ];

@@ -2,13 +2,13 @@ export type CategoryCard = {
   title: string;
   description: string;
   link: string;
-  image: boolean;
+  image: string;
 };
 
 export type ProductCard = {
   title: string;
   price: string;
-  image: boolean;
+  image: string;
   link: string;
 };
 

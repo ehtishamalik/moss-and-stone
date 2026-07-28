@@ -1,4 +1,4 @@
-import { PlaceholderMedia } from "@/components/Media";
+import Video from "@/components/Video";
 import { cn } from "@/lib/utils";
 
 export default function FeatureBannerCard({
@@ -33,11 +33,17 @@ export default function FeatureBannerCard({
             })}
           >
             {imagePosition === "left" && (
-              <PlaceholderMedia className="hidden md:block" />
+              <Video
+                className="hidden md:block h-150"
+                src={"/images/videoplayback.mp4"}
+              />
             )}
             <div className="md:px-5 my-auto">{children}</div>
             {imagePosition === "right" && (
-              <PlaceholderMedia className="hidden md:block" />
+              <Video
+                className="hidden md:block h-150"
+                src={"/images/videoplayback.mp4"}
+              />
             )}
           </div>
         </div>
