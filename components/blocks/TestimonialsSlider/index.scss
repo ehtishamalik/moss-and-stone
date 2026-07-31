@@ -1,7 +1,16 @@
 .swiper-pagination {
-  --swiper-pagination-bottom: 40px;
   display: flex;
-  padding: 0px 24px;
+  padding: 12px 24px;
+  justify-content: center;
+  background-color: var(--card);
+  position: static;
+
+  @media (min-width: 768px) {
+    --swiper-pagination-bottom: 28px;
+    justify-content: start;
+    position: absolute;
+    background-color: transparent;
+  }
 
   .swiper-pagination-bullet {
     position: relative;

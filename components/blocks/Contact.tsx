@@ -38,7 +38,9 @@ export default function Contact() {
                   placeholder="Write your message here..."
                 />
               </div>
-              <Button className="w-full">Submit</Button>
+              <Button type="button" className="w-full">
+                Submit
+              </Button>
             </form>
           </div>
           <div className="space-y-2.5">

@@ -1,3 +1,4 @@
+import NextLink from "next/link";
 import { FOOTER } from "@/constants";
 import { Link } from "../ui/link";
 
@@ -11,10 +12,10 @@ export default function Footer() {
               <div key={index} className="flex-1">
                 <p className="font-semibold! mb-5">{item.title}</p>
                 {item.links && (
-                  <ul className="space-y-2">
+                  <ul className="space-y-2.5">
                     {item.links.map((link, linkIndex) => (
                       <li key={linkIndex}>
-                        <Link href={link.href}>{link.name}</Link>
+                        <NextLink href={link.href}>{link.name}</NextLink>
                       </li>
                     ))}
                   </ul>

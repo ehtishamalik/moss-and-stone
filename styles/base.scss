@@ -4,7 +4,7 @@
 .px-container {
   width: 100%;
   max-width: breakpoint("xxl"); // Access the 'xxl' breakpoint
-  padding: 0 responsive-values(20, 35);
+  padding: 0 responsive-values(16, 32);
   margin: 0 auto;
 }
 

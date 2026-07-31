@@ -55,7 +55,7 @@ export default function Header() {
                   Menu
                 </button>
               </DrawerTrigger>
-              <DrawerContent>
+              <DrawerContent className="mx-2 md:mx-4">
                 <DrawerHeader className="sr-only">
                   <DrawerTitle>Are you absolutely sure?</DrawerTitle>
                   <DrawerDescription>
