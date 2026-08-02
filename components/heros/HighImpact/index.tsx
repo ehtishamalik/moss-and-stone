@@ -21,7 +21,7 @@ export default function HighImpactHero() {
     <section className="md:pt-17 w-full overflow-hidden">
       <div className="mx-container">
         <div className="relative h-275 md:h-222 overflow-hidden">
-          <div className="absolute top-0 left-0 z-10 pl-5 pt-20 md:pt-10 md:pl-10 max-w-md">
+          <div className="absolute top-0 left-0 z-10 px-5 pt-20 md:pt-10 md:pl-10 max-w-md">
             <h2 className="mb-2.5">Premium Men's Tailoring</h2>
             <p className="mb-5">
               Expert tailoring for shalwar kameez, suits, sherwanis, and formal

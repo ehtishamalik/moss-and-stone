@@ -71,21 +71,24 @@ export const PRODUCT_GRID: ProductCard[] = [
 
 export const TESTIMONIALS: TestimonialCard[] = [
   {
-    testimonial: "Absolutely in love with stiching. Too classy, too elegant ✨️",
-    name: "Muhammad Murtaza",
-    image: "/images/testimonials/jane-doe.jpg",
+    testimonial:
+      "I have been a customer of Baba Tailors since 2011. Their stitching quality is always excellent and fitting is perfect every time. Baba Tailors has always used the latest imported machinery and fulfilled every modern trend. I am very satisfied with their work and highly recommend them to everyone.",
+    name: "AlShifa Center",
+    image:
+      "https://lh3.googleusercontent.com/grass-cs/ACvplmNXZPD5N62WcAhFynbqULJWPFrvAIRy6MdfWsCYlUdvaxzZL_yf98zKnLhgmVYDQ8AA_0R1Kmwj5IZq3mJo4awHJvBwfPAO617zCOJ3YAmgOlODTmkjoKmaO-kK8PGwNwHTPfGV3pjh02z1",
   },
   {
     testimonial:
       "Very good excelent working two peice three peice all groom suits itemes bespok stithing master i have highly recomended for all groom stitch you favorate suites baba tailors",
     name: "Imran Sohail",
-    image: "/images/testimonials/john-smith.jpg",
+    image:
+      "https://lh3.googleusercontent.com/grass-cs/ACvplmOzN4EIqSkwlLR9gXNGP0rkZKH0Y-CtnwLy6fwJnpw2wAvEGMhih2D0f_PNb1KkZrXDkQQQ4-XeFa4DeZanYC7hnq2QlrxPKdLBVX16fvxs_RP1YbPFnyVzjiXFoXn4JVrUZUA",
   },
   {
     testimonial:
       "this is one and only professional tailor in gujranwala best stitching master very good bespok three peice suite making",
     name: "Tanha Khan",
-    image: "/images/testimonials/emily-johnson.jpg",
+    image: null,
   },
 ];
 

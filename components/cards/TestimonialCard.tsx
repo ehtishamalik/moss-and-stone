@@ -1,9 +1,10 @@
 import type { TestimonialCard as TestimonialCardProps } from "@/types";
-import { PlaceholderMedia } from "../Media";
+import Media from "../Media";
 
 export default function TestimonialCard({
   testimonial,
   name,
+  image,
 }: TestimonialCardProps) {
   return (
     <div className="p-5 md:p-10 h-full bg-card text-card-foreground">
@@ -12,7 +13,13 @@ export default function TestimonialCard({
           <h2 className="mb-10 line-clamp-3">"{testimonial}"</h2>
           <h4 className="">{name}</h4>
         </div>
-        <PlaceholderMedia className="h-100 w-full md:max-w-xs border-4" />
+        {image && (
+          <Media
+            src={image}
+            alt={name}
+            className="h-100 w-full md:max-w-xs border-4"
+          />
+        )}
       </div>
     </div>
   );

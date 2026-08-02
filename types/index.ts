@@ -15,7 +15,7 @@ export type ProductCard = {
 export type TestimonialCard = {
   testimonial: string;
   name: string;
-  image: string;
+  image: string | null;
 };
 
 export type BenefitsCard = {
