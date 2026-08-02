@@ -1,3 +1,4 @@
+import { Animate } from "@/animation/fade-in";
 import Video from "@/components/Video";
 import { cn } from "@/lib/utils";
 
@@ -38,7 +39,7 @@ export default function FeatureBannerCard({
                 src={"/images/videoplayback.mp4"}
               />
             )}
-            <div className="md:px-5 my-auto">{children}</div>
+            <Animate className="md:px-5 my-auto">{children}</Animate>
             {imagePosition === "right" && (
               <Video
                 className="hidden md:block h-150"

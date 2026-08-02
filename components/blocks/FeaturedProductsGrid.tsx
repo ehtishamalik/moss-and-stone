@@ -1,16 +1,19 @@
+import { Animate } from "@/animation/fade-in";
+import ProductCard from "@/components/cards/ProductCard";
 import { PRODUCT_GRID } from "@/constants";
-import ProductCard from "../cards/ProductCard";
 
 export default function FeaturedProductsGrid() {
   return (
     <section>
       <div className="px-container">
         <div>
-          <h2 className="mb-2.5">Tailoring for Every Occasion</h2>
-          <p className="mb-5 md:mb-10 max-w-md">
+          <Animate as="h2" className="mb-2.5">
+            Tailoring for Every Occasion
+          </Animate>
+          <Animate as="p" className="mb-5 md:mb-10 max-w-md">
             From everyday essentials to wedding attire, our custom tailoring
             ensures comfort, confidence, and timeless style.
-          </p>
+          </Animate>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-2.5">
           {PRODUCT_GRID.map((product) => (

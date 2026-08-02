@@ -1,7 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
+import { Animate } from "@/animation/fade-in";
+import Media from "@/components/Media";
+import { Link } from "@/components/ui/link";
 import type { CategoryCard as CategoryCardProps } from "@/types";
-import Media from "../Media";
-import { Link } from "../ui/link";
 
 export default function CategoryCard({
   title,
@@ -9,7 +10,7 @@ export default function CategoryCard({
   image,
 }: CategoryCardProps) {
   return (
-    <div className="group relative w-full h-108 bg-card text-card-foreground">
+    <Animate className="group relative w-full h-108 bg-card text-card-foreground">
       {image && <Media className="size-full" src={image} alt={title} />}
       <div className="absolute bottom-0 left-0 w-full">
         <div className="p-5 bg-card text-card-foreground transition-all duration-300 group-hover:bg-primary group-hover:text-primary-foreground">
@@ -24,6 +25,6 @@ export default function CategoryCard({
           </div>
         </div>
       </div>
-    </div>
+    </Animate>
   );
 }

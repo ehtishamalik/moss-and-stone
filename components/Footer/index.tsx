@@ -1,4 +1,5 @@
 import NextLink from "next/link";
+import { Animate } from "@/animation/fade-in";
 import { FOOTER } from "@/constants";
 import { Link } from "../ui/link";
 
@@ -9,7 +10,7 @@ export default function Footer() {
         <div className="p-5 flex flex-col-reverse md:flex-row gap-16 md:gap-2.5 bg-primary text-primary-foreground">
           <div className="flex-1 md:p-5 flex flex-col md:flex-row gap-10">
             {FOOTER.map((item, index) => (
-              <div key={index} className="flex-1">
+              <Animate key={index} className="flex-1">
                 <p className="font-semibold! mb-5">{item.title}</p>
                 {item.links && (
                   <ul className="space-y-2.5">
@@ -20,10 +21,10 @@ export default function Footer() {
                     ))}
                   </ul>
                 )}
-              </div>
+              </Animate>
             ))}
           </div>
-          <div className="md:p-5 md:max-w-xs">
+          <Animate className="md:p-5 md:max-w-xs">
             <h3 className="mb-2.5">Let's Create Something Exceptional</h3>
             <p className="mb-5">
               Experience custom tailoring that's crafted to fit your style,
@@ -38,10 +39,12 @@ export default function Footer() {
             >
               Visit Our Shop
             </Link>
-          </div>
+          </Animate>
         </div>
         <div className="px-5 md:px-10 py-2.5 bg-primary text-primary-foreground border-t border-background">
-          <h4>Baba Tailors &copy; {new Date().getFullYear()}</h4>
+          <Animate as="h4">
+            Baba Tailors &copy; {new Date().getFullYear()}
+          </Animate>
         </div>
       </div>
     </footer>

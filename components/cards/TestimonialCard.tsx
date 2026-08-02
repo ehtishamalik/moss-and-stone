@@ -1,5 +1,6 @@
+import { Animate } from "@/animation/fade-in";
+import Media from "@/components/Media";
 import type { TestimonialCard as TestimonialCardProps } from "@/types";
-import Media from "../Media";
 
 export default function TestimonialCard({
   testimonial,
@@ -8,7 +9,7 @@ export default function TestimonialCard({
 }: TestimonialCardProps) {
   return (
     <div className="p-5 md:p-10 h-full bg-card text-card-foreground">
-      <div className="flex flex-col-reverse md:flex-row gap-10">
+      <Animate className="flex flex-col-reverse md:flex-row gap-10">
         <div className="flex-1">
           <h2 className="mb-10 line-clamp-3">"{testimonial}"</h2>
           <h4 className="">{name}</h4>
@@ -20,7 +21,7 @@ export default function TestimonialCard({
             className="h-100 w-full md:max-w-xs border-4"
           />
         )}
-      </div>
+      </Animate>
     </div>
   );
 }

@@ -1,9 +1,10 @@
-import { Link } from "../ui/link";
-import Video from "../Video";
+import { Animate } from "@/animation/fade-in";
+import { Link } from "@/components/ui/link";
+import Video from "@/components/Video";
 
 export default function NewsletterCTA() {
   return (
-    <section>
+    <Animate as="section">
       <div className="px-container">
         <div className="h-100 relative">
           <Video
@@ -29,6 +30,6 @@ export default function NewsletterCTA() {
           </div>
         </div>
       </div>
-    </section>
+    </Animate>
   );
 }

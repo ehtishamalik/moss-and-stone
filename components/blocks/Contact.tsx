@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Animate } from "@/animation/fade-in";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
@@ -9,7 +10,7 @@ export default function Contact() {
     <section>
       <div className="px-container">
         <div className="grid grid-cols-1 md:grid-cols-[0.8fr_1fr] gap-2.5">
-          <div className="bg-card text-card-foreground border p-5">
+          <Animate className="bg-card text-card-foreground border p-5">
             <h4 className="mb-10">SEND A MESSAGE</h4>
             <form className="space-y-5">
               <div className="space-y-2.5">
@@ -42,9 +43,9 @@ export default function Contact() {
                 Submit
               </Button>
             </form>
-          </div>
+          </Animate>
           <div className="space-y-2.5">
-            <div className="bg-card text-card-foreground border p-5">
+            <Animate className="bg-card text-card-foreground border p-5">
               <h4 className="mb-2.5">CUSTOMER CARE</h4>
               <p className="mb-5">
                 For immediate assistance with orders or returns.
@@ -61,8 +62,8 @@ export default function Contact() {
                 </p>
                 <p>Hours: Monday – Friday, 9am – 6pm</p>
               </div>
-            </div>
-            <div className="bg-card text-card-foreground border p-5">
+            </Animate>
+            <Animate className="bg-card text-card-foreground border p-5">
               <h4 className="mb-2.5">OUR STUDIO</h4>
               <p className="mb-5">We currently have only one studio</p>
               <p className="font-bold!">
@@ -70,7 +71,7 @@ export default function Contact() {
                 <br />
                 Gujranwala, 52250, Pakistan
               </p>
-            </div>
+            </Animate>
           </div>
         </div>
       </div>

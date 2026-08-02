@@ -1,16 +1,19 @@
+import { Animate } from "@/animation/fade-in";
+import CategoryCard from "@/components/cards/CategoryCard";
 import { CATEGORY_GRID } from "@/constants";
-import CategoryCard from "../cards/CategoryCard";
 
 export default function CategoryGrid() {
   return (
     <section>
       <div className="px-container">
         <div>
-          <h2 className="mb-2.5">Our Services</h2>
-          <p className="mb-5 md:mb-10 max-w-md">
+          <Animate as="h2" className="mb-2.5">
+            Our Services
+          </Animate>
+          <Animate as="p" className="mb-5 md:mb-10 max-w-md">
             From everyday stitching to wedding wear, every garment is tailored
             with precision and attention to detail.
-          </p>
+          </Animate>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
           {CATEGORY_GRID.map((category) => (
