@@ -11,7 +11,7 @@ export default function CategoryCard({
 }: CategoryCardProps) {
   return (
     <Animate className="group relative w-full h-108 bg-card text-card-foreground">
-      {image && <Media className="size-full" src={image} alt={title} />}
+      {image && <Media className="w-full h-108" src={image} alt={title} />}
       <div className="absolute bottom-0 left-0 w-full">
         <div className="p-5 bg-card text-card-foreground transition-all duration-300 group-hover:bg-primary group-hover:text-primary-foreground">
           <p className="max-h-0 overflow-hidden opacity-0 transition-all duration-300 mb-4 group-hover:max-h-40 group-hover:opacity-100">

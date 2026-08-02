@@ -87,6 +87,7 @@ export default function HighImpactHero() {
                   src={item.image}
                   alt={item.name}
                   className="w-full h-140"
+                  {...(index === 0 && { priority: true, loading: "eager" })}
                 />
               </SwiperSlide>
             ))}

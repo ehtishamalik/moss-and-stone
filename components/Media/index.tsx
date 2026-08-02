@@ -9,6 +9,7 @@ type MediaProps = ImageProps & {
 export default function Media({
   className,
   imgClassName,
+  sizes = "(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw",
   ...props
 }: MediaProps) {
   return (
@@ -16,6 +17,7 @@ export default function Media({
       <Image
         className={cn("object-cover size-full", imgClassName)}
         fill
+        sizes={sizes}
         {...props}
       />
     </picture>
