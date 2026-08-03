@@ -55,11 +55,11 @@ export default function Header() {
                   Menu
                 </button>
               </DrawerTrigger>
-              <DrawerContent className="mx-2 md:mx-4">
+              <DrawerContent className="px-container">
                 <DrawerHeader className="sr-only">
-                  <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+                  <DrawerTitle>Navigation Menu</DrawerTitle>
                   <DrawerDescription>
-                    This action cannot be undone.
+                    Use the links below to navigate through the website.
                   </DrawerDescription>
                 </DrawerHeader>
                 <ol className="flex flex-col gap-2.5 py-5 px-10">
