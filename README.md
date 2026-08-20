@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Moss & Stones
+
+![Moss & Stones](./public/moss-and-stone.png)
+
+A modern, high-performance website for **Moss & Stones** - a premium men's tailoring business in Gujranwala, Pakistan. Built with Next.js 16, React 19, and Tailwind CSS for exceptional user experience and SEO.
+
+## About Moss & Stones
+
+Moss & Stones combines traditional craftsmanship with modern tailoring techniques to deliver garments with perfect fit, fine craftsmanship, and premium finishing. Services include:
+
+- **Shalwar Kameez** - Traditional stitching with modern fitting
+- **Suit Tailoring** - Custom business and formal wear
+- **Sherwani Tailoring** - Elegant wedding wear
+- **Waistcoat Tailoring** - Classic styles with precision finishing
+- **Kurta Pajama** - Comfortable everyday and festive wear
+- **Pant Tailoring** - Perfectly fitted trousers
+- **Alterations** - Professional clothing alterations
+
+## Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org) 16 (latest)
+- **UI Framework**: React 19
+- **Styling**: Tailwind CSS 4 with SCSS
+- **Component Libraries**: Shadcn, Base UI, Radix UI
+- **Animations**: Motion (Framer Motion alternative)
+- **Icons**: Lucide React
+- **Code Quality**: Biome (linting & formatting)
+- **Package Manager**: Bun
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ or Bun
+- npm/yarn/pnpm or bun
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+# or
+bun install
+```
+
+### Development
 
 ```bash
 npm run dev
 # or
-yarn dev
-# or
-pnpm dev
-# or
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the site in development mode. Changes to files will hot-reload automatically.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Start development server with webpack
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run Biome linting checks
+- `npm run format` - Format code with Biome
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+.
+├── app/                  # Next.js App Router pages
+│   ├── page.tsx         # Homepage
+│   ├── about/           # About page
+│   ├── contact/         # Contact page
+│   ├── layout.tsx       # Root layout
+│   └── ...
+├── components/
+│   ├── blocks/          # Page sections (hero, grid, sliders)
+│   ├── cards/           # Reusable card components
+│   ├── heros/           # Hero section components
+│   └── ui/              # Base UI components
+├── styles/              # Global SCSS styles
+├── types/               # TypeScript type definitions
+├── constants/           # App constants and data
+├── lib/                 # Utility functions
+├── fonts/               # Local font files (Satoshi)
+└── public/              # Static assets
+```
 
-## Deploy on Vercel
+## Key Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Responsive Design** - Mobile-first approach with Tailwind CSS
+- **SEO Optimized** - Metadata, Open Graph, Twitter Cards configured
+- **Performance** - Image optimization, font optimization
+- **Modern Components** - Slider testimonials, category grids, feature cards
+- **TypeScript** - Full type safety throughout the project
+- **Tailored Messaging** - Custom content showcasing Moss & Stones' expertise
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Environment Variables
+
+Create a `.env.local` file (or copy from `.example.env`):
+
+```env
+NEXT_PUBLIC_SERVER_URL=http://localhost:3000
+```
+
+## Deployment
+
+The application is ready for deployment on [Vercel](https://vercel.com), the creators of Next.js.
+
+### Deploy with Vercel
+
+```bash
+vercel deploy
+```
+
+Or connect your Git repository to Vercel for automatic deployments.
+
+## Code Quality
+
+This project uses **Biome** for code quality management:
+
+```bash
+# Check for issues
+npm run lint
+
+# Format code
+npm run format
+```
+
+## Credits
+
+This project is a complete rebuild of a Framer template, hand-crafted with Next.js and modern web technologies to create a fully functional production-ready website.
